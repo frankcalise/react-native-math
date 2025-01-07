@@ -14,7 +14,6 @@ namespace margelo::nitro::math {
     HybridObject::loadHybridMethods();
     // load custom methods/properties
     registerHybrids(this, [](Prototype& prototype) {
-      prototype.registerHybridGetter("pi", &HybridMathSpec::getPi);
       prototype.registerHybridMethod("add", &HybridMathSpec::add);
     });
   }

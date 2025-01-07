@@ -11,7 +11,7 @@ add_library(${PACKAGE_NAME} SHARED
 )
 
 # Add Nitrogen specs :)
-include(${CMAKE_SOURCE_DIR}/../nitrogen/generated/android/NitroMath+autolinking.cmake)
+include(${CMAKE_CURRENT_SOURCE_DIR}/../nitrogen/generated/android/NitroMath+autolinking.cmake)
 
 # Set up local includes
 include_directories(
@@ -27,3 +27,4 @@ target_link_libraries(
         ${LOG_LIB}
         android                                   # <-- Android core
 )
+

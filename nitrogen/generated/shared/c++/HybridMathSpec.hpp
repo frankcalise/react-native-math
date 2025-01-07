@@ -44,7 +44,7 @@ namespace margelo::nitro::math {
 
     public:
       // Properties
-      virtual double getPi() = 0;
+      
 
     public:
       // Methods
